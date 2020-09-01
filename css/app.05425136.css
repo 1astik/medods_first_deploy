@@ -1,0 +1,186 @@
+body {
+    margin: 0
+}
+
+body .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease
+}
+
+body .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle
+}
+
+body .modal-footer {
+    display: flex;
+    justify-content: flex-end
+}
+
+body .modal-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+body .modal-header h3 {
+    margin-top: 0;
+    color: #42b983
+}
+
+body .modal-button {
+    margin-top: 2rem;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: .25rem
+}
+
+body .modal-button:hover {
+    cursor: pointer;
+    background-color: #1f7934;
+    border-color: #1f7934
+}
+
+body .modal-enter, body .modal-leave-active {
+    opacity: 0
+}
+
+body .modal-enter .modal-container, body .modal-leave-active .modal-container {
+    transform: scale(1.1)
+}
+
+.main-text {
+    text-align: center
+}
+
+.main-text h1 {
+    margin: 0;
+    padding-top: 1rem
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem
+}
+
+.form .create-btn {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    opacity: 50%
+}
+
+.form .active-btn {
+    opacity: 100%
+}
+
+.form .active-btn:hover {
+    cursor: pointer;
+    background-color: #0068d0
+}
+
+* {
+    box-sizing: border-box
+}
+
+* .form-group {
+    margin-bottom: 1rem
+}
+
+* .form-group .label-hover {
+    cursor: pointer
+}
+
+* .form-group .custom-select {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E), linear-gradient(180deg, #fff 0, #e5e5e5);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    cursor: pointer
+}
+
+* .form-group .invalid-feedback {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #9d0d00
+}
+
+* .form-group label {
+    display: inline-block;
+    margin-bottom: .5rem
+}
+
+* .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+* .is-invalid {
+    border: 1px solid red
+}
+
+.main {
+    font-family: Oxygen, sans-serif;
+    background: #817dba;
+    background: linear-gradient(180deg, #817dba, #b3b3d6 35%, #f5f5f5 97%)
+}
